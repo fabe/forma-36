@@ -1,0 +1,73 @@
+---
+title: 'Icon'
+type: 'component'
+github: 'https://github.com/contentful/forma-36/tree/master/packages/forma-36-react-components/src/components/Icon'
+storybook: 'https://f36-storybook.contentful.com/?path=/story/components-icon--icon-default'
+---
+
+(Icons are visual hints for users to indicate actions, statuses and so on. Is used in Buttons, Icon Buttons and so on.)
+
+```jsx
+<React.Fragment>
+  <Icon icon="Edit" />
+</React.Fragment>
+```
+
+## Table of contents
+
+1. [Best practices](#best-practices)
+2. [Variations](#variations)
+   1. [Colors](#colors)
+3. [Copy considerations](#copy-considerations)
+4. [Accessibility](#accessibility)
+
+## Best practices <a name="best-practices" />
+
+- Position buttons consistently in the interface
+- Use right Icons to represent right actions
+- Use extablished Icons
+- Pair Icons with text
+
+## Variations <a name="variations" />
+
+Icon component can be configurated in different ways. Here are some examples.
+
+### Colors (`color`) <a name="colors" />
+
+```jsx
+<React.Fragment>
+  <Icon color="primary" icon="Edit"/>
+  <Icon color="positive" icon="Edit"/>
+  <Icon color="negative" icon="Edit"/>
+  <Icon color="warning" icon="Edit"/>
+  <Icon color="secondary" icon="Edit"/>
+  <Icon color="muted" icon="Edit"/>
+  <Icon color="white" icon="Edit"/>
+</React.Fragment>
+```
+
+| Button Type  | Notes                                                                                                                                          |
+| :----------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Primary**  | Used for the most important actions in any scenario. Don’t use more than one primary button in a section or screen to avoid overwhelming users |                                                     |
+| **Positive** | For use when the action has a positive connotation such as creating or publishing a new entity                                                 |
+| **Negative** | For destructive actions - when something can't be undone, for example, deleting entities                                                       |
+| **Negative** | ???|
+| **Warning**  | ???|
+| **Secondary**| ???|
+| **Muted**    | Used for a secondary actions, the most commonly used button type                                                                               |
+| **White**    | ???|
+
+### Sizes (`size`)
+
+```jsx
+<React.Fragment>
+  <Icon color="primary" size="tiny" icon="Edit"/>
+  <Icon color="primary" size="small" icon="Edit"/>
+  <Icon color="primary" size="large" icon="Edit"/>
+</React.Fragment>
+```
+
+## Copy considerations <a name="copy-considerations" />
+
+## Accessibility <a name="accessibility" />
+
