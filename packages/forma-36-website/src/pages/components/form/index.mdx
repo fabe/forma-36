@@ -5,7 +5,7 @@ github: 'https://github.com/contentful/forma-36/tree/master/packages/forma-36-re
 storybook: 'https://f36-storybook.contentful.com/?path=/story/components-form--default'
 ---
 
-Form is a wrapper component that handles form submissions.
+The Form component is a wrapper for form submissions.
 
 ```jsx
 <React.Fragment>
@@ -19,7 +19,7 @@ Form is a wrapper component that handles form submissions.
         id="nameInput"
         labelText="Name"
         value="Johannes Bugiel"
-        helpText="Please enter your name"
+        helpText="Enter name"
       />
       <TextField
         required
@@ -27,7 +27,7 @@ Form is a wrapper component that handles form submissions.
         id="emailInput"
         labelText="E-Mail"
         value="johannes.bugiel@contentful.com"
-        helpText="Please enter your mail"
+        helpText="Enter email address"
       />
       <Button>Submit</Button>
     </Form>
@@ -38,15 +38,15 @@ Form is a wrapper component that handles form submissions.
 
 1. [Best practices](#best-practices)
 2. [Variations](#variations)
-   1. [Button types](#button-types)
-3. [Copy considerations](#copy-considerations)
-4. [Accessibility](#accessibility)
+   1. [Default spacing](#spacing-default)
+   2. [Condensed spacing](#spacing-condensed)
+3. [Writing guidelines](#copy-considerations)
 
 ## Best practices <a name="best-practices" />
 
-- This `Form` component wraps it's contents with HTML `<form>` component
-- Should be used to wrap all form input components
-- To imitate navive HTML behaviuor, add handler for `oncSubmit` action
+- The `Form` component wraps content with the HTML <form> component
+- To maintain consistency, use the `Form` component to wrap all form input components
+- To imitate native HTML behavior, add handler for `onSubmit` action
 
 ## Variations <a name="variations" />
 
@@ -64,7 +64,7 @@ Form is a wrapper component that handles form submissions.
         id="nameInput"
         labelText="Name"
         value="Johannes Bugiel"
-        helpText="Please enter your name"
+        helpText="Enter name"
       />
       <TextField
         required
@@ -72,7 +72,7 @@ Form is a wrapper component that handles form submissions.
         id="emailInput"
         labelText="E-Mail"
         value="johannes.bugiel@contentful.com"
-        helpText="Please enter your mail"
+        helpText="Enter email address"
       />
       <Button>Submit</Button>
     </Form>
@@ -93,7 +93,7 @@ Form is a wrapper component that handles form submissions.
         id="nameInput"
         labelText="Name"
         value="Johannes Bugiel"
-        helpText="Please enter your name"
+        helpText="Enter name"
       />
       <TextField
         required
@@ -101,16 +101,14 @@ Form is a wrapper component that handles form submissions.
         id="emailInput"
         labelText="E-Mail"
         value="johannes.bugiel@contentful.com"
-        helpText="Please enter your mail"
+        helpText="Enter email address"
       />
       <Button>Submit</Button>
     </Form>
 </React.Fragment>
 ```
 
-## Copy considerations <a name="copy-considerations" />
+## Writing guidelines <a name="copy-considerations" />
 
-
-## Accessibility <a name="accessibility" />
-
-
+- Do not use punctuation following a label
+- Use sentence style caps (in which only the first word of a sentence or term is capitalized) on labels
